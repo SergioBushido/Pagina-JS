@@ -32,7 +32,7 @@ $(document).ready(function() {
        title: 'Prueba de titulo 5',
        date:'Publicado el día '+ moment().date()+ " de "+ moment().format("MMMM") + " del "+moment().format("YYYY"),//plugin de MOMENT
        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis purus ac nunc bibendum scelerisque. Fusce consectetur mi a lorem feugiat, sed laoreet diam placerat.'
-     }
+     },
    ];
 
  posts.forEach((item, index) => {
@@ -47,6 +47,7 @@ $(document).ready(function() {
      </article>
    `;
     $("#posts").append(post); //PARA CARGAR EN INDEX EL POST
+
  });
 
 
@@ -71,4 +72,16 @@ $(document).ready(function() {
                        </p>
                        <a href="#" class="button-more">Leer más</a>
                    </article>*/
+
+   //CAPTURANDO EL EVENTO CLICK PARA CAMBIAR DE COLOR
+   var theme =$("#theme");
+   $("#to-green").click(function(){
+     theme.attr("href","css/green.css")
+   });
+   $("#to-red").click(function(){
+     theme.attr("href","css/red.css")
+   });
+   $("#to-blue").click(function(){
+     theme.attr("href","css/blue.css")
+    });
  });
