@@ -84,4 +84,14 @@ $(document).ready(function() {
    $("#to-blue").click(function(){
      theme.attr("href","css/blue.css")
     });
+
+    //EVENTO PARA PULSAR I SUBIR ARRIBA
+
+    $('.subir').click(function(e){
+    e.preventDefault();
+    $('html,body').animate({
+            scrollTop: 0 //metodo jquery pixel 0 desde donde empieza la web
+        }, 500);
+        return false;
+    });
  });
