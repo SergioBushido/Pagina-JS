@@ -104,7 +104,9 @@ if (window.location.href.indexOf('contact') > -1) {
      dateFormat: 'dd-mm-yy'
    });
    $.validate({
-     lang: 'es'
+     lang: 'es',
+     errorMessagePosition: 'top',
+     scrollToToOnError: true
    });
  }
 
