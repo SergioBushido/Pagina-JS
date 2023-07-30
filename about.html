@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <title>Proyecto JS</title>
+  <!--CARGAMOS ESTILOS-->
+  <link rel="stylesheet" href="css/stiles.css" type="text/css">
+  <link rel="stylesheet" id="theme" href="css/green.css">
+
+
+  <!--CARGAMOS JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!--UI se carga despues de jquery y hay que elegir que cargamos, en este caso .min-->
+  <script src="js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.min.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.structure.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.theme.css">
+
+  <!--SCRIPTS JS-->
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+<div id="selector-theme">
+  <div id="to-green"></div>
+  <div id="to-red"></div>
+  <div id="to-blue"></div>
+</div>
+<section id="global">
+  <!--CABECERA-->
+  <header>
+    <div id="logo">
+      <h1> Proyecto js </h1>
+    </div>
+    <div class="clearfix"></div>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reloj.html">Reloj</a></li>
+        <li><a href="about.html">Sobre mi</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--CONTENIDO-->
+  <section id="content">
+    <div class="content-wrapper"> <!-- Agregamos un div contenedor para el contenido principal -->
+      <div id="box">
+        <h2>Sobre mí</h2>
+        <!--CARGAMOS ACORDEON-->
+        <div id="acordeon">
+          <!-- Contenido del acordeón -->
+          <h3>¿Quienes somos?</h3>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis purus ac nunc bibendum scelerisque.
+            </p>
+          </div>
+          <h3>¿Qué hacemos?</h3>
+          <div>
+            <p>
+              Phasellus vulputate nec lorem non malesuada. Aenean lorem ante, auctor at enim nec, commodo condimentum diam.
+            </p>
+          </div>
+          <h3>¿Por qué elegirnos?</h3>
+          <div>
+            <p>
+              Nam pharetra, nunc vel egestas scelerisque, arcu elit scelerisque orci, eu rutrum ante orci id sem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside id="sidebar">
+      <!-- Contenido del sidebar "¿Quién soy?" -->
+      <div id="about">
+        <h4><span>¿Quién soy?</span></h4>
+        <img alt="castigador" src="img/cas.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis purus ac nunc bibendum scelerisque.</p>
+      </div>
+      <!-- Contenido del sidebar "Identificate" -->
+      <div id="login">
+        <h4><span>Identificate</span></h4>
+        <form>
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="form_name">
+
+          <label for="email">Correo</label>
+          <input type="text" name="email">
+
+          <label for="password">Contraseña</label>
+          <input type="text" name="password">
+
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </aside>
+    <div class="clearfix"></div>
+  </section>
+</section>
+<footer>
+  Pagina de prueba Java Script Sergio Fernández Jiménez &copy;
+
+  <a href="#" class="subir">Subir</a>
+</footer>
+</body>
+</html>
